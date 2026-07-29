@@ -1,9 +1,0 @@
-let obj = JSON.parse($response.body);
-if (obj && obj.Content) {
-    obj.Content.is_vip = 1;
-    obj.Content.vip_level = 6;
-    obj.Content.enddate = "2099-12-31 23:59:59";
-    obj.Content.is_pack_year = 1;
-    obj.Content.probation = [];
-}
-$done({body: JSON.stringify(obj)});
